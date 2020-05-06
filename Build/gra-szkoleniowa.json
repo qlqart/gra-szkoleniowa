@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "gra-szkoleniowa",
+"productVersion": "0.1",
+"dataUrl": "gra-szkoleniowa.data.unityweb",
+"wasmCodeUrl": "gra-szkoleniowa.wasm.code.unityweb",
+"wasmFrameworkUrl": "gra-szkoleniowa.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.9f1"
+}
