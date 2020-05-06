@@ -3,13 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | gra-szkoleniowa</title>
+    <title>gra-szkoleniowa</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      UnityLoader.instantiate("unityContainer", "Build/gra-szkoleniowa.json");
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/gra-szkoleniowa.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body style="padding: 0; margin: 0; overflow: hidden; position: absolute; width: 90%; background-color: black; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); ">
-    <div id="unityContainer" style="width: 100%; height: 100%; margin: auto"></div>
+  <body style="background-color: black;">
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 1280px; height: 720px"></div>
+      <div class="footer">
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+      </div>
+    </div>
   </body>
 </html>
